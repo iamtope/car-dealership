@@ -4,8 +4,8 @@ import test from './test';
 import production from './production';
 
 const {
-  SFC_SECRET: SECRET,
-  SFC_NODE_ENV: NODE_ENV
+  CAR_SECRET: SECRET,
+  CAR_NODE_ENV: NODE_ENV
 } = process.env;
 
 const currentEnv = {

@@ -1,13 +1,13 @@
 import config from '../../config/env';
 
 const {
-  SFC_BASE_URL,
+  CAR_BASE_URL,
   NODE_ENV,
   PORT
 } = config;
 
 const BASE_URL = NODE_ENV === 'production'
-  ? SFC_BASE_URL
+  ? CAR_BASE_URL
   : `http://localhost:${PORT || 3000}`;
 
 export default {
@@ -89,7 +89,7 @@ export default {
     'You do not have sufficient permission to interact with this FACILITY resource',
 
   REDIS_RUNNING: 'Redis server is running',
-  SFC_RUNNING: 'SFC is running on PORT',
+  CAR_RUNNING: 'Car dealership applications is running on PORT',
   USERNAME_ERROR: 'Username registered already',
   GENERIC_ERROR: 'Sorry, something went wrong'
 };
