@@ -65,7 +65,7 @@ class Helper {
     if (res === null) {
       return id;
     }
-    Helper.regenerateUniqueId(i, query);
+    return Helper.regenerateUniqueId(i, query);
   }
 
   /**
@@ -147,7 +147,9 @@ class Helper {
    * @returns {object } - A new object containing essential user properties and jwt token.
    */
   static addTokenToData(user, is_admin = false) {
-    const { id, facility_id, role, email, company_id } = user;
+    const {
+      id, facility_id, role, email, company_id
+    } = user;
     const token = Helper.generateToken({
       id,
       facility_id,

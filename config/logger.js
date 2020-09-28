@@ -10,14 +10,14 @@ const fileOptions = {
   json: true,
   maxsize: 5242880,
   maxFiles: 5,
-  colorize: false,
+  colorize: false
 };
 
 const consoleOptions = {
   level: 'debug',
   handleExceptions: true,
   json: false,
-  colorize: true,
+  colorize: true
 };
 
 /**
@@ -25,7 +25,7 @@ const consoleOptions = {
 * @param {String} env - Node Environment value.
 * @returns { Object } An object containing the logger options.
 */
-const makeOptions = env => {
+const makeOptions = (env) => {
   let options = null;
   switch (env) {
     case 'test':
@@ -63,14 +63,14 @@ const makeOptions = env => {
 * @param {String} env - Node Environment value.
 * @returns { Object } A logger Instance.
 */
-const initLogger = env => {
+const initLogger = (env) => {
   const { file, console: cons } = makeOptions(env);
   if (!fs.existsSync(logDir)) fs.mkdirSync(logDir);
   const logger = winston.createLogger({
     format: winston.format.combine(
       winston.format.timestamp(),
       winston.format.colorize(),
-      winston.format.printf(msg => `[${new Date(msg.timestamp).toUTCString()}] - ${msg.level}: ${msg.message}`)
+      winston.format.printf((msg) => `[${new Date(msg.timestamp).toUTCString()}] - ${msg.level}: ${msg.message}`)
     ),
     transports: [
       new winston.transports.File(file),
@@ -81,7 +81,7 @@ const initLogger = env => {
   logger.stream = {
     write(message) {
       logger.info(message);
-    },
+    }
   };
   return logger;
 };
