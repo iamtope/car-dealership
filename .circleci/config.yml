@@ -18,5 +18,4 @@ jobs:
           environment: 
             - REDIS_URL=redis://localhost:6379
             - CAR_POSTGRES_DEV_URL=postgres://circleci-demo-go:password@localhost:5432/circle_test?sslmode=disable
-          command: |
-          npm test
+          command: npm test
