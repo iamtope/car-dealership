@@ -12,6 +12,9 @@ jobs:
     steps:
       - checkout
       - run:
+        name: Install Dependencies
+        command: npm install
+      - run:
           name: Run Tests
           environment: 
             REDIS_URL: redis://localhost:6379
