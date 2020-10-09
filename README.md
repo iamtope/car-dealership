@@ -1,9 +1,8 @@
-# CAR_API 
+# CAR_API:
+[![aq](https://circleci.com/gh/iamtope/cardealership.svg?style=svg)](https://app.circleci.com/pipelines/github/iamtope/car-dealership)
 
-[![Build Status](https://travis-ci.org/addempsea/streakforcash-api.svg?branch=master)](https://travis-ci.org/addempsea/streakforcash-api)
+# Example:
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/5fc3e0941ee60a8f1ea0/maintainability)](https://codeclimate.com/github/addempsea/streakforcash-api/maintainability)
-
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5fc3e0941ee60a8f1ea0/test_coverage)](https://codeclimate.com/github/addempsea/streakforcash-api/test_coverage)
-
-[![Coverage Status](https://coveralls.io/repos/github/addempsea/streakforcash-api/badge.svg?branch=master)](https://coveralls.io/github/addempsea/streakforcash-api?branch=master)
+# Example for specific branch:
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs/tree/teesloane-patch-5.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs/tree/teesloane-patch-5)
